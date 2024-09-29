@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <header className={`${styles.outerWrapper} py-2 bg-primary`}>
-            <div className={`${styles.wrapper} flex justify-between items-center`}>
+            <div className={`${styles.wrapper} flex gap-6 justify-between items-center`}>
                 <Link to={"/"}>
-                    <img className='max-w-[200px]' src={logoImage} alt="" />
+                    <img className='max-w-[140px]' src={logoImage} alt="" />
                 </Link>
 
-                <ul className='flex items-center gap-4 text-white'>
+                <ul className='flex flex-wrap items-center gap-3 text-white text-sm' >
                     <li>
                         <Link to={"/"}>Home</Link>
                     </li>
